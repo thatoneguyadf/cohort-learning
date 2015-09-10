@@ -1,0 +1,116 @@
+@import "topiary";
+@import "blog";
+@import "colors";
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  article {
+    margin: 20px;
+  }
+
+  .jumbotron {
+    background: url("../../../../uploads/2015/07/article-2406679-1B882097000005DC-394_964x642.jpg")
+    no-repeat center;
+    background-size: cover;
+    margin: 0;
+    height: 250px;
+
+
+  }
+  .navbar {
+    font-family: 'Oxygen', sans-serif;
+    background-color: @beige;
+    color: @green;
+    border: 0;
+
+    .active a, .active a:hover, .open a, .dropdown-menu {
+      background-color: @green !important;
+      color: @beige;
+    }
+
+    div {
+
+      .search {
+
+        div {
+
+          .search-input {
+            width: 250px;
+            border: 1px solid @green;
+          }
+        }
+
+        .search-submit {
+          border: 1px solid @green;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .topiary-header {
+    font-family: 'Lobster', cursive;
+    height: 235px;
+
+  }
+
+  .container-fluid {
+    background-color: @green;
+    color: @beige;
+
+    a {
+      color: @beige;
+    }
+  }
+
+  .title {
+    font-size: 100px;
+    margin: 50px auto 25px;
+
+  }
+
+  .content {
+    background-color: @beige;
+    color: @green;
+    //padding-bottom: 5%;
+
+    a {
+      color: @green;
+    }
+
+    .text {
+      background-color: white;
+    }
+
+    article {
+      margin: 40px 20px;
+
+      p {
+        margin: 20px auto;
+      }
+    }
+
+  }
+
+  .content:after {
+    clear: both;
+  }
+
+  .clear {
+    clear: both;
+  }
+}
